@@ -1,0 +1,38 @@
+.About{
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 0;
+    border-bottom: 1px solid #e8e6e6;
+    .text{
+        width: 50%;
+        h2{
+            color: #509e2d;
+            font-size: 30px;
+            margin: 0;
+            
+        }
+        p{
+            color: #5c5c5c;
+            line-height: 1.6;
+        }
+    }
+    .image{
+        width: 400px;
+        border-radius: 10px;
+        border: 1px solid #509e2d;
+        overflow: hidden;
+        height: 260px;
+        box-shadow: 1px 1px 8px #509e2d;
+    }
+}
+
+@media (max-width:800px) {
+    .text{
+       flex-grow: 1;
+    }
+    .image{
+        display: none;
+    }
+}

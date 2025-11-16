@@ -1,0 +1,85 @@
+.CatPage{
+    padding: px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 100px;
+    height: 80vh;
+    p{
+        color: #5c5c5c;
+    }
+    /* background-color: aqua; */
+    h4{
+        margin-left: 10px;
+    }
+}
+.details{
+    direction: rtl;
+    /* background-color: red; */
+}
+.box{
+    
+    width: 400px;
+}
+
+.image{
+    /* background-color: blue; */
+    padding-left:60px ;
+    width: fit-content;
+    .mainImage{
+        /* max-width: 500px;
+        min-width: 400px;
+        border-radius: 8px;
+        object-fit: cover;
+        overflow: hidden; */
+        width: 400px;
+    max-width: 500px;
+    min-height: 200px;
+    max-height: 400px;
+    border-radius: 8px;
+    object-fit: contain; /* يظهر الصورة كاملة بدون قص */
+    background-color: #f5f5f5; 
+    }
+}
+.thumbnails{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    img{
+        cursor: pointer;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: 0.3s;
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+    }
+    img:hover{
+       opacity: 0.7;
+       border: 1px solid #5c5c5c;
+    }
+}
+
+@media (max-width:768px) {
+    .CatPage{
+        flex-direction: column;
+        height: fit-content;
+        
+        gap: 40px;
+    }.image{
+        padding: 0;
+    }
+    .mainImage{
+        max-width:98%;
+        min-width: 98%;
+       
+    }
+    .details{
+        width: 90%;
+    }
+    .box{
+        width: 100%;
+       margin-bottom: 40px;
+    }
+}

@@ -1,0 +1,22 @@
+.adopt{
+    padding-top:40px ;
+    min-height: 100vh;
+    .search{
+       padding: 4px; 
+    }
+
+    .cats{
+        margin: 50px 0px;
+        display:  flex;
+        align-items: center;
+       direction: rtl;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+}
+@media (max-width:840px) {
+    .cats{
+        justify-content: center;
+    }
+}
+

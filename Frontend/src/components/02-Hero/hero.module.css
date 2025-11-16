@@ -1,0 +1,105 @@
+.hero {
+  padding: 70px 0;
+  direction: rtl;
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  border-bottom: 1px solid #e8e6e6;
+}
+.right {
+  position: relative;
+}
+.left {
+  margin-right: -50px;
+  h1 {
+    color: #509e2d;
+    font-size: 50px;
+  }
+  p {
+    color: #5c5c5c;
+  }
+  .btn {
+    display: flex;
+    gap: 20px;
+    justify-content: end;
+  }
+}
+.board {
+  position: absolute;
+  right: 70%;
+  bottom: 2%;
+  min-height: 100%;
+  min-width: 30px;
+  background: #509e2d;
+}
+@media (max-width: 700px) {
+  .hero {
+    /* flex-direction: column; */
+    position: relative;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    left: -200px;
+    img {
+      width: 550px;
+    }
+  }
+  .left {
+    margin-right: 0;
+    margin-top: 270px;
+  }
+  .left h1 {
+    font-size: 50px;
+  }
+  .left p {
+    color: #5c5c5c;
+  }
+  .left .btn {
+    justify-content: center;
+  }
+}
+.addFormBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+  overflow: auto;
+  .addFormBox {
+    width: 300px;
+    min-height: 50%;
+    max-height: 96vh;
+    overflow-y: auto;
+    background: white;
+    border-radius: 10px;
+    padding: 10px 50px;
+    box-shadow: 1px 1px 10px #5c5c5c;
+    
+
+    h3{
+      text-align: center;
+      padding: 20px;
+      color: #509e2d;
+    }
+    label{
+      font-weight: 500;
+    }
+    div{
+     
+      margin-bottom: 8px;
+      input,select{
+        
+        min-height: 28px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+
+      }
+    }
+  }
+}

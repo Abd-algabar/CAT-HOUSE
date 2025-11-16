@@ -1,0 +1,25 @@
+.sign {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .input {
+    border: 2px solid #509e2d;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #509e2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 300px;
+    padding: 40px;
+    h2 {
+      color: #509e2d;
+      width: 100%;
+      text-align: center;
+    }
+    span{
+        color: #509e2d;
+    }
+  }
+}
