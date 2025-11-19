@@ -1,7 +1,7 @@
 import Nav from "./components/01-Nav/Nav.jsx";
 import { Routes, Route } from "react-router-dom";
 import Container from "@mui/material/Container";
-import Home from "./pages/home.jsx";
+import Home from "./pages/Home.jsx";
 import Footer from "./components/07-Footer/Footer.jsx";
 import Login from "./pages/login/Login.jsx";
 import SignUp from "./pages/SignUp/SignUp.jsx";
